@@ -426,6 +426,13 @@ main .post-content .post-title a {
   font-size: 1rem;
   padding: 0.3rem 0.5rem;
 }
+.contact_form textarea {
+  width: 80%;
+  margin: 5px;
+  font-family: var(--Lexend);
+  font-size: 1rem;
+  padding: 0.3rem 0.5rem;
+}
 .contact_form button {
   background: var(--sky);
   border-radius: 2px;
