@@ -221,7 +221,17 @@
                             <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
                         </div>
                     </div>
-                    <div class="pagination flex-row" id="contactus">
+                    <div id="contactus" class="post-title">
+                        <h2>Contact Us</h2>
+                        <form name="contact-form" class="contact_form">
+                            <input type="text" class="input-element" name="user_name" placeholder="Name (*)" required/>
+                            <input type="email" class="input-element" name="user_email" placeholder="Email (*)" required/>
+                            <input type="phone" class="input-element" name="contact_number" placeholder="Contact number (optional)" required/>
+                            <input type="message" class="input-element" name="user_message" placeholder="Message (*)" required/>
+                            <button type="submit" class="btn post-btn">Submit</button>
+                        </form>
+                    </div>
+                    <div class="pagination flex-row" >
                         <a href="#"><i class="fas fa-chevron-left"></i></a>
                         <a href="#" class="pages">1</a>
                         <a href="#" class="pages">2</a>
@@ -413,6 +423,9 @@
 
     <!-- Custom Javascript file -->
     <script src="./js/main.js"></script>
+
+    <!-- Contact form js file -->
+    <script src="./js/form.js"></script>
 </body>
 
 </html>
