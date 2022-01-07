@@ -5,8 +5,9 @@ const form = document.forms["contact-form"];
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   fetch(scriptURL, { method: "POST", body: new FormData(form) })
-    .then((response) =>
-      alert("Recieved your query. We'll get back to you asap!")
-    )
+    .then((response) => {
+      alert("Recieved your query. We'll get back to you asap!");
+      document.getElementById("contact-form").reset();
+    })
     .catch((error) => console.error("Error!", error.message));
 });
